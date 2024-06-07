@@ -1,0 +1,30 @@
+/* Estilo para el contenedor de los botones */
+
+
+.boton {
+    display: inline-block;
+    padding: 100px; /* Aumentar el padding para hacer los botones más grandes */
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative; /* Para el posicionamiento del ícono */
+    overflow: hidden; /* Para ocultar el desbordamiento de la imagen */
+    background-color: transparent; /* Fondo transparente para el botón */
+}
+
+/* Estilo para las imágenes dentro de los botones */
+.boton img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0; /* La imagen está inicialmente oculta */
+    transition: opacity 0.3s ease; /* Transición de opacidad */
+}
+
+/* Estilo para la animación al pasar el cursor sobre el botón */
+.boton:hover img {
+    opacity: 1; /* Mostrar la imagen al pasar el cursor sobre el botón */
+}
